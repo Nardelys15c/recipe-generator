@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
+    <div class="container">
     <header>
     <h1>
        AI Crockpot Recipe Generator.
@@ -16,18 +17,25 @@
 <form >
     <input type="text" placeholder="Enter the type of protein"  
      autofocus required 
-      autocomplete="'off"/>
-    <input type="Submit"/>
+      autocomplete="'off"
+      class="instructions"
+      />
+      
+    <input type="Submit" class="submit-button"/>
+
 </form>
-<div>
-    The poem will go here
+<div class="recipe">
+    The recipe will go here
 </br>
-    The poem will go here
+    The recipe will go here
 </div>
 </main>
     
 
     <footer>This is coded by Nardelys Caraballo and is open-sourced on <a href="https://github.com/Nardelys15c/recipe-generator.git" target="_blank">  Github</a></footer>
+</div>
+
+
     <script src="src/index.js"></script>
 </body>
 </html>
