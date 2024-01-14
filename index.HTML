@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Crockpot Recipe Generator</title>
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 <body>
     <div class="container">
@@ -14,20 +15,18 @@
     </h1>
 </header>
 <main>
-<form >
+<form  id="recipe-generator-form">
     <input type="text" placeholder="Enter the type of protein"  
      autofocus required 
       autocomplete="'off"
       class="instructions"
       />
       
-    <input type="Submit" class="submit-button"/>
+    <input type="submit" class="submit-button"/>
 
 </form>
-<div class="recipe">
-    The recipe will go here
-</br>
-    The recipe will go here
+<div class="recipe" id="recipe">
+  
 </div>
 </main>
     
