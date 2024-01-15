@@ -19,6 +19,11 @@ let instructionsInput= document.querySelector("#user-instructions");
     let prompt=`User instructions are: Generate a crockpot recipe using ${instructionsInput.value}`;
     let apiUrl =`https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+let recipeElement= document.querySelector("#recipe");
+recipeElement.classList.remove("hidden");
+recipeElement.innerHTML= `<div class="generating">⏳Generating your recipe of  ${instructionsInput.value} </div>`;
+
+
 console.log("generating recipe");
 console.log(`prompt ${prompt}`);
 console.log(`context: ${context}`);
